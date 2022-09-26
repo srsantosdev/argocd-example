@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocdapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argocdapp
+  template:
+    metadata:
+      labels:
+        app: argocdapp
+    spec:
+      containers:
+      - name: argocdapp
+        image: argocdapp
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3333

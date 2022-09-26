@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: argocdapp
+spec:
+  selector:
+    app: argocdapp
+  ports:
+  - port: 3333
+    targetPort: 3333
