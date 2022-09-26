@@ -8,4 +8,4 @@ namespace: argocdworkspace
 images:
 - name: argocdapp
   newName: srsantosdev/argocd-example
-  newTag: 14b01f0773f54f267496e14dd2560d264020d4ad
+  newTag: c56469328bcab45b0addbc8d77afa5219b78cd40
