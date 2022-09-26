@@ -1,11 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 namespace: argocdworkspace
 images:
-  - name: argocdapp
-    newName: argocdapp
-    newTag: latest
+- name: argocdapp
+  newName: srsantosdev/argocd-example
+  newTag: 14b01f0773f54f267496e14dd2560d264020d4ad
